@@ -1,0 +1,136 @@
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Calculator</title>
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="style.css">
+
+
+  </head>
+  <body>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+          
+          <div class="row header">
+            <div class="col-md-2">
+              <span class="glyphicon glyphicon glyphicon-menu-hamburger"></span>
+            </div>
+            <div class="col-md-8">
+              <p>Calculator</p>
+            </div>
+            <div class="col-md-2">
+              <span class="glyphicon glyphicon glyphicon-cog"></span>
+            </div>
+          </div>
+          <div class="row teaxtbox">
+            <div class="col-md-12 padding-reset">
+              <input placeholder="0" id="result" type="text"  name="" value="">
+            </div>
+          </div>
+  
+          <div class="row commonbutton">
+         
+            <div class="col-md-3">
+              <input type="submit" name="" onclick="displayData('&#8730')"  value="&#8730;" class="">
+            </div>
+            <div class="col-md-3">
+              <input type="submit" name="" onclick="displayData('(')"   value="(" class="">
+            </div>
+            <div class="col-md-3">
+              <input type="submit" name="" onclick="displayData(')')"   value=")" class="">
+            </div>
+            <div class="col-md-3">
+              <input type="submit" name=""onclick="displayData('%')"    value="%" class="">
+            </div>
+           
+            <div class="col-md-3">
+              <input type="submit" name="" onclick="displayData('7')"   value="7">
+            </div>
+            <div class="col-md-3">
+              <input type="submit" name=""onclick="displayData('8')"    value="8" class="">
+            </div>
+            <div class="col-md-3">
+              <input type="submit" name=""onclick="displayData('9')"    value="9" class="">
+            </div>
+            <div class="col-md-3">
+              <input type="submit" name="" onclick="displayData('/')"   value="/" class="">
+            </div>
+         
+            <div class="col-md-3">
+              <input type="submit" name="" onclick="displayData('4')"   value="4" class="">
+            </div>
+            <div class="col-md-3">
+              <input type="submit" name="" onclick="displayData('5')"   value="5" class="">
+            </div>
+            <div class="col-md-3">
+              <input type="submit" name=""onclick="displayData('6')"    value="6" class="">
+            </div>
+            <div class="col-md-3">
+              <input type="submit" name="" onclick="displayData('*')"   value="&#215" class="">
+            </div>
+          
+            <div class="col-md-3">
+              <input type="submit" name="" onclick="displayData('1')"   value="1" class="">
+            </div>
+            <div class="col-md-3">
+              <input type="submit" name=""  onclick="displayData('2')"   value="2" class="">
+            </div>
+            <div class="col-md-3">
+              <input type="submit" name=""   onclick="displayData('3')"  value="3" class="">
+            </div>
+            <div class="col-md-3">
+              <input type="submit" name=""  onclick="displayData('-')"   value="-" class="">
+            </div>
+          </div> 
+          <div class="row conflict">
+            <div class="col-md-9">
+              <div class="row">
+                <div class="col-md-4">
+                  <input type="submit" name=""onclick="displayData('0')"    value="0" class="">
+                </div>
+
+                 <div class="col-md-4">
+                    <input type="submit" name="" onclick="displayData('exp')"     value="exp" class="">
+                 </div>
+
+                <div class="col-md-4">
+                  <input type="submit" name=""onclick="displayData('.')"    value="." class="">
+                </div>
+                <div class="col-md-4">
+                  <input type="submit" name="" onclick="calculatorClear()" value="ac" id="ac">
+                </div>
+                <div class="col-md-4">
+                  <input type="submit" name="" onclick="calculateResult()" value="=" id="equal">
+                </div>
+                <div class="col-md-4">
+                  <input type="submit" name="" onclick="removeLast ()" value="del" id="del">
+                </div>
+              </div>
+            </div> 
+            <div class="col-md-3">
+                <input type="submit" name="" onclick="displayData('+')"   value="+" id="plus">
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </body>
+
+  <script src="./main.js"></script>
+
+
+  </html>
